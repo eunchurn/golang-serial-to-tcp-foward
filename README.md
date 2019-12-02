@@ -14,6 +14,13 @@ export PATH=$PATH:/usr/local/go/bin
 go get github.com/tarm/serial
 ```
 
+### Install service
+
+```bash
+curl -o- https://raw.githubusercontent.com/eunchurn/golang-serial-to-tcp-foward/master/scripts/serial-app.service \
+| bash
+```
+
 ## Run main code
 
 ```bash
