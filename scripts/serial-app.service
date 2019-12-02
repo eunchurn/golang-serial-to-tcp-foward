@@ -1,0 +1,14 @@
+[Unit]
+Description=MCDL UART to TCP forwarding application
+Documentation=https://github.com/eunchurn/golang-serial-to-tcp-foward
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/root/.serial-app
+ExecStart=/root/.serial-app/serial-app
+
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
