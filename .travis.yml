@@ -19,4 +19,3 @@ install:
 script:
   - make test
   - make build
-  - $GOPATH/bin/goveralls -coverprofile=coverage-all.out -service=travis-ci
