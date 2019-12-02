@@ -1,5 +1,7 @@
 # MCDL UART to TCP
 
+[![Actions Status](https://github.com/eunchurn/golang-serial-to-tcp-foward/workflows/Go/badge.svg)](https://github.com/eunchurn/golang-serial-to-tcp-foward/actions) [![Build Status](https://travis-ci.org/eunchurn/golang-serial-to-tcp-foward.svg?branch=master)](https://travis-ci.org/eunchurn/golang-serial-to-tcp-foward)
+
 Hard coded device `/dev/ttySAC4` baudrate is `2500000` for APROS-MCDL fixed peripheral as DSP to UART. This app is simple UART to TCP server fowarding (fixed port: `8001`) application.
 
 ## Install golang in ARTIK710
