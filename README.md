@@ -1,6 +1,6 @@
 # MCDL UART to TCP
 
-Hard coded device `/dev/ttySAC4` baudrate is `2500000` for APROS-MCDL. This app is simple UART to TCP fowarding application.
+Hard coded device `/dev/ttySAC4` baudrate is `2500000` for APROS-MCDL fixed peripheral as DSP to UART. This app is simple UART to TCP server fowarding (fixed port: `8001`) application.
 
 ## Install golang in ARTIK710
 
