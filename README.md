@@ -1,5 +1,7 @@
 # MCDL UART to TCP
 
+Hard coded device `/dev/ttySAC4` baudrate is `2500000` for APROS-MCDL. This app is simple UART to TCP fowarding application.
+
 ## Install golang in ARTIK710
 
 ```bash
@@ -15,17 +17,17 @@ go get github.com/tarm/serial
 ## Run main code
 
 ```bash
-go run main.go
+go run serial-app.go
 ```
 
 ## Build
 
 ```bash
-go build main.go
+go build serial-app.go
 ```
 
 ### Run built binary
 
 ```bash
-./main
+./serial-app
 ```

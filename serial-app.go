@@ -40,11 +40,11 @@ func main() {
 			fmt.Println("Error accepting: ", err.Error())
 			os.Exit(1)
 		}
-		go serial_to_tcp(s, conn)
+		go SerialToTCP(s, conn)
 	}
 }
 
-func serial_to_tcp(s *serial.Port, conn net.Conn) {
+func SerialToTCP(s *serial.Port, conn net.Conn) {
 	buf := make([]byte, 128)
 	for {
 		n, err := s.Read(buf)
