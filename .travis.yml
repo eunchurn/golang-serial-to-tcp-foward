@@ -1,0 +1,21 @@
+language: go
+
+go:
+  - '1.13.4'
+  - tip
+
+cache:
+  directories:
+    - vendor
+
+install:
+  - go get golang.org/x/tools/cmd/cover
+  - go get github.com/mattn/goveralls
+  - go get github.com/axw/gocov/gocov
+  - go get -u github.com/golang/dep/cmd/dep
+  - go get github.com/tarm/serial
+  - dep ensure
+
+script:
+  - make test
+  - $HOME/gopath/bin/goveralls -coverprofile=coverage-all.out -service=travis-ci
